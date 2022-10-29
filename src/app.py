@@ -9,7 +9,7 @@ for i in url_file.readlines():
 url_file.close()
 
 if __name__ == '__main__':
-    start_http_server(8000)
+    start_http_server(80)
     label_url_status = ['url']
     g1 = Gauge('sample_external_url_up','Status of URL',labelnames=label_url_status)
     g2 = Gauge('sample_external_url_response_ms','Response time of URL',labelnames=label_url_status)
