@@ -1,5 +1,18 @@
 # url-status
 
+### About this project
+This is the python project which monitors the required URLs using requests module and instruments the code using prometheus client library. It moniors below two metrics of given URL :-
+* a. Health of URL. (up or down uring 1 and 0 as code respectively)
+* b. Gets response time of URLs
+Entire data is plotted using grafana dashboard and prometheus monitoring tool.
+The URLs to monitored should be placed in file urls.txt in src folder. Please follow along the doc on for the procedure to deploy the application.
+
+### Prerequisite
+1. Docker installed on local machine.
+2. Minikube cluster setup.
+
+<span style="color:blue">*Note*</span> :- The below application is deployed on kubernetes running on minikube.
+
 ### Testing application image on local machine
 **Step 1** :- Build docker image on local.
 * a. ```docker build -t url-status -f Dockerfile .``` #at root level of folder url-status
