@@ -13,7 +13,7 @@
 **Step 3** :- Test the application
 * a. ```docker exec -it url-status sh``` #Open another terminal and exec in the container.
 * b. ```curl localhost```
-* c. Should give output-1 as below.
+* c. Should give ![output-1](https://github.com/gore28akshay/url-status/blob/master/images/output-1.png).
 
 ### Deploying application on kubernetes.
 **Step 1** :- Applying yaml files to deploy application
