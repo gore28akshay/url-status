@@ -56,13 +56,20 @@
 * e. Verify that the above source is default in grafana.
 
 **Step 4** :- Creating panels in grafana using Query.
-a. Query to create panel which shows status of https://httpstat.us/200
-   ```sample_external_url_up{url="https://httpstat.us/200"}```
-b. Query to create panel which shows response time of https://httpstat.us/200
-   ```sample_external_url_response_ms{url="https://httpstat.us/200"}```
-c. Query to create panel which shows status of https://httpstat.us/503
-   ```sample_external_url_up{url="https://httpstat.us/503"}```
-d. Query to create panel which shows response time of https://httpstat.us/503
-   ```sample_external_url_response_ms{url="https://httpstat.us/503"}```
-
+* a. Query to create panel which shows status of https://httpstat.us/200
+     ```sample_external_url_up{url="https://httpstat.us/200"}```
+* b. Query to create panel which shows response time of https://httpstat.us/200
+     ```sample_external_url_response_ms{url="https://httpstat.us/200"}```
+* c. Query to create panel which shows status of https://httpstat.us/503
+     ```sample_external_url_up{url="https://httpstat.us/503"}```
+* d. Query to create panel which shows response time of https://httpstat.us/503
+     ```sample_external_url_response_ms{url="https://httpstat.us/503"}```
 Alternatively import dashboards using the json files uploaded at root of folder.
+##### status of https://httpstat.us/200
+![status-200](https://github.com/gore28akshay/url-status/blob/master/images/200-URL-status.png)
+##### response time of https://httpstat.us/200
+![rsp-time-200](https://github.com/gore28akshay/url-status/blob/master/images/200-url-response-time.png)
+#### status of https://httpstat.us/503
+![status-500](https://github.com/gore28akshay/url-status/blob/master/images/500-URL-status.png)
+#### response time of https://httpstat.us/503
+![rsp-time-500](https://github.com/gore28akshay/url-status/blob/master/images/500-URL-response-time.png)
