@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: url-status-service
+spec:
+  clusterIP: None
+  selector:
+    app: url-status
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80

@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: url-status-deployment
+  labels:
+    app: url-status
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: url-status
+  template:
+    metadata:
+      labels:
+        app: url-status
+    spec:
+      containers:
+      - name: url-status
+        image: gore28akshay/url-status:latest
+        ports:
+        - containerPort: 80
