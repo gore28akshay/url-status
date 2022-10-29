@@ -13,7 +13,7 @@
 **Step 3** :- Test the application
 * a. ```docker exec -it url-status sh``` #Open another terminal and exec in the container.
 * b. ```curl localhost```
-* c. Should give ![output-1](https://github.com/gore28akshay/url-status/blob/master/images/output-1.png).
+* c. Should give output as below![output-1](https://github.com/gore28akshay/url-status/blob/master/images/output-1.png).
 
 ### Deploying application on kubernetes.
 **Step 1** :- Applying yaml files to deploy application
@@ -25,7 +25,7 @@
 * b. ```curl localhost:8080``` #execute command from local machine
 * c. ```kubectl port-forward svc/url-status-service 8080:80``` #port forward to test service
 * d. ```curl localhost:8080``` #execute command from local machine
-* e. Above two commands will give output-2 as below
+* e. Above two commands will give ![output-2](https://github.com/gore28akshay/url-status/blob/master/images/output-2.png)
 
 ### Deploying grafana and prometheus on kubernetes.
 **Step 1**  :- Applying yaml files to deploy prometheus and grafana
@@ -35,24 +35,24 @@
 * a. ```kubectl port-forward svc/prometheus-server 8080:9090``` #port forward to test prometheus
 * b. Open any browser on local machine and access prometheus using below url.
       http://localhost:8080  
-      This should give output-3  
+      This should give ![output-3](https://github.com/gore28akshay/url-status/blob/master/images/output-3.png)
 * c. Check if the application is being scraped by prometheus using below url
       http://localhost:8080/targets  
-      This should give output-4  
+      This should give ![output-4](https://github.com/gore28akshay/url-status/blob/master/images/output-4.png)
       This screen shows that our target url-status is getting scraped by prometheus.  
 
 **Step 3** :- Open grafana UI using port-forward.
 * a. kubectl port-forward svc/grafana 8080:3000
-      This should give output-5
+      This should give ![output-5](https://github.com/gore28akshay/url-status/blob/master/images/output-5.png)
       Login using default grafana uername:password as admin:admin
       Set new password as per choice
 * b. Configure datasource using "Data Sources" option in welcome panel.
-      Refer output-6
+      Refer ![output-6](https://github.com/gore28akshay/url-status/blob/master/images/output-6.png)
 * c. Add url of prometheus in HTTP text box in below image. Url of prometheus would be
       http://prometheus-server.default.svc.cluster.local:9090
-      Refer output-7
+      Refer ![output-7](https://github.com/gore28akshay/url-status/blob/master/images/output-7.png)
 * d. Click on "Save & test" button at the bottom of screen.
-      Refer output-8
+      Refer ![output-8](https://github.com/gore28akshay/url-status/blob/master/images/output-8.png)
 * e. Verify that the above source is default in grafana.
 
 **Step 4** :- Creating panels in grafana using Query.
