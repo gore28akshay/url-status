@@ -7,7 +7,8 @@ This is the python project which monitors the required URLs using requests modul
 Entire data is plotted using grafana dashboard and prometheus monitoring tool.
 The URLs to monitored should be placed in file urls.txt in src folder. Please follow along the doc on for the procedure to deploy the application.
 
-<span style="color:green;font-weight:700;font-size:20px">Note :- </span> **Docker image pushed on dockerhub is build for arm64 architecture. Please rebuild the image for x86_64/amd64 using provided Dockerfile. This image is used during deployment in kubernetes.**
+### _Note :- 
+**Docker image pushed on dockerhub is build for arm64 architecture. Please rebuild the image for x86_64/amd64 using provided Dockerfile. This image is used during deployment in kubernetes.**
 
 
 ### Prerequisite
