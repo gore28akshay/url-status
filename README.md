@@ -1,7 +1,7 @@
 # url-status
 
 ### About this project
-This is the python project which monitors the required URLs using requests module and instruments the code using prometheus client library. It moniors below two metrics of given URL :-
+This is the python project which monitors the required URLs using requests module and instruments the code using prometheus client library. The monitoring data is projected using dashboards created in grafana which has prometeheus tool as backend.It moniors below two metrics of given URL :-
 * a. Health of URL. (up or down uring 1 and 0 as code respectively)
 * b. Gets response time of URLs
 Entire data is plotted using grafana dashboard and prometheus monitoring tool.
@@ -86,3 +86,10 @@ Alternatively import dashboards using the json files uploaded at root of folder.
 ![status-500](https://github.com/gore28akshay/url-status/blob/master/images/500-URL-status.png)
 #### response time of https://httpstat.us/503
 ![rsp-time-500](https://github.com/gore28akshay/url-status/blob/master/images/500-URL-response-time.png)
+
+****
+### Unit Test
+
+Script **url_unit_test.py** does the task of unit testing the module ```get_url_status()```.
+get_url_status() is the module which gets status and response time of provided URLs.
+Execution :- ```python3 url_unit_test.py```
