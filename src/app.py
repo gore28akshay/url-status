@@ -22,3 +22,4 @@ if __name__ == '__main__':
                 g1.labels(url=values[0]).set(0)
             g2.labels(url=values[0]).set(values[2])
             # print(values)
+#comment to test github actions
